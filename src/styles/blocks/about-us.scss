@@ -1,28 +1,27 @@
 .about-us {
-  $columns: 2;
-  display: grid;
-  column-gap: 20px;
-  grid-template-columns: repeat($columns, 1fr);
+  @include pageGrid;
 
-  @include onTablet {
-    $columns: 6;
-    column-gap: 24px;
+  &__title {
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: 1 / 4;
+    }
+
+    @include onDesktop {
+      grid-column: span 6;
+    }
   }
-
-  @include onDesktop {
-    $columns: 12;
-    column-gap: 24px;
-  }
-
-  // &__title {
-
-  // }
 
   &__content {
-    &--text {
-      font-size: 16px;
-      line-height: 140%;
-      font-weight: 400;
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: 4 / 7;
+    }
+
+    @include onDesktop {
+      grid-column: span 6;
     }
   }
 }

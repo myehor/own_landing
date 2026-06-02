@@ -1,0 +1,68 @@
+.categories {
+  &__wrapper {
+    display: grid;
+    row-gap: 40px;
+
+    @include onTablet {
+      row-gap: 64px;
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
+    width: 280px;
+    height: 56px;
+    color: #fff;
+    background-color: #292929;
+    border-radius: 8px;
+    cursor: pointer;
+
+    @include onTablet {
+      width: 400px;
+    }
+
+    @include onDesktop {
+      width: 500px;
+    }
+  }
+}
+
+.category {
+  &__photos {
+    @include pageGrid;
+    margin-bottom: 16px;
+  }
+
+  &__link {
+    &--wide {
+      @include onTablet {
+        grid-column: span 4;
+      }
+
+      @include onDesktop {
+        grid-column: span 8;
+      }
+    }
+
+    &--square {
+      @include onTablet {
+        grid-column: span 2;
+      }
+
+      @include onDesktop {
+        grid-column: span 4;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    
+    @include onTablet {
+      font-size: 24px;
+    }
+  }
+}

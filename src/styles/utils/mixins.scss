@@ -30,3 +30,22 @@
     #{$property}: $toValue;
   }
 }
+
+@mixin pageGrid {
+    $mobile-columns: 2;
+  $tablet-columns: 6;
+  $desktop-columns: 12;
+
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat($mobile-columns, 1fr);
+
+  @include onTablet {
+    grid-template-columns: repeat($tablet-columns, 1fr);
+    column-gap: 24px;
+  }
+
+  @include onDesktop {
+    grid-template-columns: repeat($desktop-columns, 1fr);
+  }
+}
