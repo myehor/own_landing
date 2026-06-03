@@ -1,7 +1,7 @@
 {
   "name": "own_landing",
   "homepage": "own_landing",
-  "source": "src/index.html",
+  "source": "./index.html",
   "scripts": {
     "start": "parcel --open",
     "build": "parcel build"
