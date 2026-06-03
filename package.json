@@ -1,5 +1,6 @@
 {
   "name": "own_landing",
+  "homepage": "own_landing",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel --open",
