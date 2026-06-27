@@ -1,6 +1,7 @@
 .products {
   &__recommended {
     @include pageGrid;
+
     row-gap: 40px;
   }
 

@@ -1,25 +1,27 @@
 .form {
   &__field {
-    margin-bottom: 16px;
     display: flex;
     justify-content: center;
+    margin-bottom: 16px;
     color: #7e7e83;
 
     &-info {
       box-sizing: border-box;
-      color: #7e7e83;
-      background: #f8f8fa;
-      border: none;
-      outline: none;
-      padding-inline: 10.9px;
-      height: 48px;
-      font-family: "Cinzel", serif;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 20px;
       width: 100%;
+      height: 48px;
+      padding-inline: 10.9px;
+      border: none;
+
+      font-family: Cinzel, serif;
+      font-size: 14px;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 20px;
+      color: #7e7e83;
+
       appearance: none;
+      background: #f8f8fa;
+      outline: none;
 
       &:hover {
         border: 1px solid #d5d7de;
@@ -38,13 +40,16 @@
   }
 
   &__textarea {
-    padding: 0;
-    padding-inline: 10.9px;
-    padding-block: 14px;
-    height: 144px;
-    overflow-y: auto;
-    margin-bottom: 48px;
     resize: none;
+
+    overflow-y: auto;
+
+    height: 144px;
+    margin-bottom: 48px;
+    padding: 0;
+    padding-block: 14px;
+    padding-inline: 10.9px;
+
     appearance: none;
   }
 
@@ -55,22 +60,24 @@
 
     &-text {
       box-sizing: border-box;
-      text-align: center;
-      line-height: 56px;
       width: 100%;
       height: 56px;
-      background-color: $main-text-color;
-      color: #fff;
-      font-family: "Cinzel", serif;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 700;
       border: none;
+
+      font-family: Cinzel, serif;
+      font-size: 16px;
+      font-weight: 700;
+      font-style: normal;
+      line-height: 56px;
+      color: #fff;
+      text-align: center;
+
+      background-color: $main-text-color;
       outline: none;
 
       &:hover {
-        background-color: #ae1c23;
         cursor: pointer;
+        background-color: #ae1c23;
       }
 
       &:active {

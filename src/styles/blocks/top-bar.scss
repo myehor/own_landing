@@ -1,8 +1,8 @@
 .top-bar {
-  padding-block: 28px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-block: 28px;
 
   @include onTablet {
     padding-block: 36px;
@@ -16,7 +16,7 @@
   &__logo-link {
     display: flex;
   }
-  
+
   &__logo {
     height: 16px;
 
@@ -25,5 +25,12 @@
     @include onTablet {
       height: 24px;
     }
+  }
+
+  &__phone-button {
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background: transparent;
   }
 }

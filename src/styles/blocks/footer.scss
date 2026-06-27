@@ -1,7 +1,6 @@
 .footer {
   overflow: hidden;
   min-height: 250px;
-
   background: linear-gradient(
     to bottom,
     #fff 0%,
@@ -14,18 +13,18 @@
   &__content {
     position: relative;
 
-    min-height: 250px;
-
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 250px;
 
     text-align: center;
 
     &::before {
+      pointer-events: none;
       content: 'NOTHING';
 
       position: absolute;
@@ -33,11 +32,8 @@
 
       font-size: 120px;
       font-weight: 700;
-      letter-spacing: 8px;
-
       color: rgb(255 255 255 / 4%);
-
-      pointer-events: none;
+      letter-spacing: 8px;
     }
 
     > * {
@@ -49,10 +45,9 @@
   &__title {
     margin: 0;
 
-    color: #fff;
-
     font-size: 32px;
     font-weight: 700;
+    color: #fff;
     letter-spacing: 8px;
 
     @include onTablet {
@@ -62,9 +57,8 @@
 
   &__subtitle {
     margin: 0;
-
-    color: rgb(255 255 255 / 75%);
     font-size: 14px;
+    color: rgb(255 255 255 / 75%);
 
     @include onTablet {
       font-size: 16px;
@@ -77,11 +71,9 @@
   }
 
   &__social-link {
-    color: #fff;
-
     font-size: 30px;
+    color: #fff;
     text-decoration: none;
-
     transition: all 0.3s ease;
 
     &:hover {
@@ -92,8 +84,7 @@
 
   &__copyright {
     margin: 0;
-
-    color: rgb(255 255 255 / 50%);
     font-size: 12px;
+    color: rgb(255 255 255 / 50%);
   }
 }

@@ -1,5 +1,6 @@
 .contacts-grid {
   @include pageGrid;
+
   row-gap: 48px;
 
   &__contact {

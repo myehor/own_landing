@@ -1,8 +1,8 @@
 .contact {
   @include onDesktop {
     display: grid;
-    column-gap: 24px;
     grid-template-columns: repeat(6, 1fr);
+    column-gap: 24px;
   }
 
   &__data {
@@ -12,33 +12,36 @@
   &__name {
     margin: 0;
     margin-bottom: 16px;
-    color: $main-text-color;
-    font-family: "Cinzel", serif;
+
+    font-family: Cinzel, serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
+    font-style: normal;
     line-height: 27px;
+    color: $main-text-color;
   }
 
   &__text {
     margin: 0;
-    color: $main-text-color;
-    font-family: "Cinzel", serif;
+
+    font-family: Cinzel, serif;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
+    font-style: normal;
     line-height: 27px;
+    color: $main-text-color;
   }
 
   &__number {
     margin: 0;
     margin-bottom: 8px;
-    color: $main-text-color;
-    font-family: "Cinzel", serif;
+
+    font-family: Cinzel, serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
+    font-style: normal;
     line-height: 27px;
+    color: $main-text-color;
     text-decoration: none;
 
     &:hover {
@@ -49,12 +52,13 @@
   &__address {
     margin: 0;
     margin-bottom: 48px;
-    color: $main-text-color;
-    font-family: "Cinzel", serif;
+
+    font-family: Cinzel, serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
+    font-style: normal;
     line-height: 140%;
+    color: $main-text-color;
     text-decoration: none;
 
     &:hover {

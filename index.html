@@ -28,9 +28,134 @@
                 alt="Nothing logo"
               >
             </a>
+
             <div class="top-bar__icons">
-              <a href="#" class="icon icon--phone"></a>
-              <a href="#menu" class="icon icon--menu"></a>
+              <div class="top-bar__phone">
+                <button
+                  type="button"
+                  class="icon icon--phone top-bar__phone-button"
+                  popovertarget="contact-popover"
+                  aria-label="Contact us"
+                ></button>
+
+                <div
+                  id="contact-popover"
+                  popover="auto"
+                  class="contact-popover"
+                >
+
+                  <button
+                    class="contact-popover__close"
+                    popovertarget="contact-popover"
+                    popovertargetaction="hide"
+                    aria-label="Close"
+                  >
+                    ✕
+                  </button>
+
+                  <img
+                    src="./src/images/logo.svg"
+                    alt="Nothing"
+                    class="contact-popover__logo"
+                  >
+
+                  <h2 class="contact-popover__heading">
+                    Hi there! 👋
+                  </h2>
+
+                  <p class="contact-popover__text">
+                    Thanks for stopping by. We'd love to hear from you.
+                    Get in touch with us or follow us on social media.
+                  </p>
+
+                  <div class="contact-popover__divider"></div>
+
+                  <h3 class="contact-popover__title">
+                    Contact us
+                  </h3>
+
+                  <a
+                    href="tel:+49123456789"
+                    class="contact-popover__card"
+                  >
+                    <span class="contact-popover__card-left">
+                      <span class="contact-popover__icon">
+                        📞
+                      </span>
+
+                      <span class="contact-popover__card-text">
+                        +49 123 456 789
+                      </span>
+                    </span>
+
+                    <span class="contact-popover__arrow">
+                      →
+                    </span>
+                  </a>
+
+                  <a
+                    href="mailto:info@example.com"
+                    class="contact-popover__card"
+                  >
+                    <span class="contact-popover__card-left">
+                      <span class="contact-popover__icon">
+                        ✉️
+                      </span>
+
+                      <span class="contact-popover__card-text">
+                        info@example.com
+                      </span>
+                    </span>
+
+                    <span class="contact-popover__arrow">
+                      →
+                    </span>
+                  </a>
+
+                  <div class="contact-popover__divider"></div>
+
+                  <h3 class="contact-popover__title">
+                    Follow us
+                  </h3>
+
+                  <div class="contact-popover__socials">
+                    <a
+                      href="https://instagram.com"
+                      class="contact-popover__social"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="./src/images/icons/instagram.png"
+                        alt="Instagram"
+                        class="contact-popover__social-icon"
+                      >
+
+                      <span>Instagram</span>
+                    </a>
+
+                    <a
+                      href="https://facebook.com"
+                      class="contact-popover__social"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="./src/images/icons/facebook.png"
+                        alt="Facebook"
+                        class="contact-popover__social-icon"
+                      >
+
+                      <span>Facebook</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="#menu"
+                class="icon icon--menu"
+              ></a>
             </div>
           </div>
           <div class="header__bottom">

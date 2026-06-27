@@ -9,13 +9,16 @@
   }
 
   &__button {
-    margin: 0 auto;
+    cursor: pointer;
+
     width: 280px;
     height: 56px;
-    color: #fff;
-    background-color: #292929;
+    margin: 0 auto;
     border-radius: 8px;
-    cursor: pointer;
+
+    color: #fff;
+
+    background-color: #292929;
 
     @include onTablet {
       width: 400px;
@@ -30,6 +33,7 @@
 .category {
   &__photos {
     @include pageGrid;
+
     margin-bottom: 16px;
   }
 
@@ -63,8 +67,8 @@
 
   &__title {
     margin: 0;
-    font-weight: 700;
     font-size: 18px;
+    font-weight: 700;
     line-height: 140%;
     
     @include onTablet {
